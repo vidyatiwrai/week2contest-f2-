@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contest 2</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  
+  </head>
+  <body>
+    <select id="profession-type">
+      <option>Profession</option>
+      <option>Developer</option>
+      <option>Admin</option>
+    </select>
+    <div class="user-list" id="users"></div>
+    <button onclick="showUser()">Filter</button>
+    <div class="new-user">
+      <p>Add a New User</p>
+      <div class="input">
+        <div>
+          <p>Enter Name</p>
+          <br />
+          <input type="text" id="name" />
+        </div>
+        <div>
+          <p>Enter Profession</p>
+          <br />
+          <input type="text" id="profession" />
+        </div>
+        <div>
+          <p>Enter Age</p>
+          <br />
+          <input type="text" id="age" />
+        </div>
+      </div>
+      <button onclick="addUser()">Add User</button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
